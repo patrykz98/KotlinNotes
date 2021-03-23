@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">KotlinNotes</string>
     <string name="notes">My Notes</string>
+    <string name="notes_title">Notes title</string>
+    <string name="notes_sub_title">Notes sub title</string>
+    <string name="notes_description">Enter Notes Here</string>
     <string name="search">Search your notes</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
