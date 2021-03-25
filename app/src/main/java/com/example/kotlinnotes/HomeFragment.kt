@@ -5,11 +5,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.SearchView
+import android.widget.Toast
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.kotlinnotes.adapter.NotesAdapter
 import com.example.kotlinnotes.database.NotesDatabase
+import com.example.kotlinnotes.entities.Notes
+import kotlinx.android.synthetic.main.fragment_create_note.*
 import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.coroutines.launch
+import java.util.*
+import kotlin.collections.ArrayList
+
+
 
 class HomeFragment : BaseFragment() {
 
