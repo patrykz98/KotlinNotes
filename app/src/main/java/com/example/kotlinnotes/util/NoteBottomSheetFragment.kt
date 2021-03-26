@@ -15,6 +15,15 @@ import kotlinx.android.synthetic.main.fragment_notes_bottom_sheet.*
 
 class NoteBottomSheetFragment : BottomSheetDialogFragment() {
 
+    companion object{
+        fun newInstance(): NoteBottomSheetFragment{
+            val args = Bundle()
+            val fragment = NoteBottomSheetFragment()
+            fragment.arguments = args
+            return fragment
+        }
+    }
+
     var selectedColor = "#171C26"
     override fun setupDialog(dialog: Dialog, style: Int) {
         super.setupDialog(dialog, style)

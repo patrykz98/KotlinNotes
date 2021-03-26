@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.example.kotlinnotes.database.NotesDatabase
 import com.example.kotlinnotes.entities.Notes
+import com.example.kotlinnotes.util.NoteBottomSheetFragment
 import kotlinx.android.synthetic.main.fragment_create_note.*
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
@@ -57,6 +58,11 @@ class CreateNoteFragment : BaseFragment() {
 
         imgBack.setOnClickListener{
             replaceFragment(HomeFragment.newInstance(), false)
+        }
+
+        imgMore.setOnClickListener{
+            var noteBottomSheetFragment = NoteBottomSheetFragment.newInstance()
+            noteBottomSheetFragment.show(requireActivity().supportFragmentManager, "Note Bottom")
         }
 
     }
